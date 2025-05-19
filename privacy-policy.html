@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WebNexus AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0 auto; max-width: 800px; padding: 20px; color: #333; }
+        h1 { color: #FF7B00; /* WebNexus AI Primary Color */ border-bottom: 2px solid #FF7B00; padding-bottom: 10px; }
+        h2 { color: #E06E00; /* WebNexus AI Secondary Color */ margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        h3 { color: #333; margin-top: 20px; }
+        p, ul { margin-bottom: 15px; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        strong { font-weight: bold; }
+        a { color: #FF7B00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        .last-updated { font-style: italic; color: #555; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for WebNexus AI</h1>
+        <p class="last-updated">Last Updated: May 19, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to WebNexus AI! This Privacy Policy explains how WebNexus AI ("we," "us," or "our") collects, uses, and protects your information when you use our Chrome Extension ("Extension").</p>
+        <p>By installing and using WebNexus AI, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2>2. Information We Collect (and How We Collect It)</h2>
+        <p>WebNexus AI is designed to operate with a strong emphasis on user privacy and local data storage.</p>
+        
+        <h3>a. Information You Provide Directly:</h3>
+        <ul>
+            <li><strong>API Keys:</strong> If you choose to use the Side Panel (API Mode) feature, you may provide API keys for third-party AI platforms (e.g., OpenAI, Google Gemini, Anthropic Claude, DeepSeek, Grok, Mistral). These API keys are stored <strong>exclusively locally</strong> on your computer using Chrome's `chrome.storage.local` API. They are <strong>only</strong> sent directly from your browser to the respective AI platform's official API endpoint when you initiate an API request through the Side Panel. We do not have access to, transmit, or store your API keys on any external servers controlled by us.</li>
+            <li><strong>Custom Prompts & Settings:</strong> Prompts you create and save, your AI platform preferences (e.g., default platform for popup/sidepanel, default models), and model parameter configurations (e.g., temperature, max tokens) are stored locally on your computer. Custom prompts, model parameters, and tab-specific states (like chat history) use `chrome.storage.local`. Global UI preferences (like theme, text size, and global default platform choice) use `chrome.storage.sync`, which may be synced across your signed-in Chrome browsers if you have Chrome Sync enabled for extensions.</li>
+        </ul>
+
+        <h3>b. Information Processed by the Extension (User-Initiated):</h3>
+        <p>When you explicitly activate WebNexus AI on a webpage, PDF, or YouTube video, the Extension processes certain information to facilitate its core functionality:</p>
+        <ul>
+            <li><strong>Web Page Content:</strong> Textual content extracted from the web page you are currently viewing.</li>
+            <li><strong>PDF Content:</strong> Textual content extracted from PDF files you open in your browser.</li>
+            <li><strong>YouTube Video Transcripts:</strong> Publicly available transcripts associated with YouTube videos.</li>
+            <li><strong>Reddit Content:</strong> Post and comment text from Reddit pages.</li>
+            <li><strong>User Prompts:</strong> The specific instructions or questions you type or select within the Extension.</li>
+        </ul>
+        <p><strong>How This Information Is Used during Processing:</strong> This extracted content and your prompts are processed locally within your browser. Depending on the mode you select:</p>
+        <ul>
+            <li><strong>Web UI Mode:</strong> The content and your prompt are prepared and sent to the official website of the AI platform you select (by opening that website in a new tab and attempting to auto-fill the content into the platform's input fields). Your interaction thereafter is directly with that platform's website.</li>
+            <li><strong>Side Panel (API Mode):</strong> The content (if context inclusion is enabled), your prompt, and your locally stored API key for the selected platform are sent directly from your browser to that platform's official API endpoint.</li>
+        </ul>
+        <p>WebNexus AI <strong>does not</strong> store this extracted page content or your specific prompts on any external servers controlled by us. Conversation history generated within the Side Panel is stored locally on your computer per browser tab using `chrome.storage.local`.</p>
+
+        <h3>c. Information We Do Not Collect:</h3>
+        <ul>
+            <li>WebNexus AI <strong>does not</strong> collect or transmit any personal browsing history (other than the URL of the active tab when you invoke the extension for content processing), cookies, or any other personal information unrelated to its explicitly stated functionality.</li>
+            <li>We <strong>do not</strong> track your activity across websites for purposes other than providing the core functionality of the Extension when you explicitly activate it on a page.</li>
+            <li>We <strong>do not</strong> collect analytics or usage statistics that personally identify you.</li>
+        </ul>
+
+        <h2>3. How We Use Information</h2>
+        <ul>
+            <li>To provide and maintain the core functionality of WebNexus AI, enabling you to analyze, summarize, and interact with web content, PDFs, and YouTube videos using your chosen AI platforms.</li>
+            <li>To store your preferences (API keys, custom prompts, settings) locally on your device for your convenience and persistent use of the Extension.</li>
+            <li>To facilitate communication directly from your browser to the AI platforms you select, sending them your prompts and the relevant content for processing as per your instructions.</li>
+        </ul>
+
+        <h2>4. Information Sharing and Disclosure</h2>
+        <ul>
+            <li><strong>AI Platforms:</strong> When you use WebNexus AI, your prompts, extracted content (if context inclusion is enabled), and API keys (for Side Panel mode) are sent directly from your browser to the AI platform you have selected and configured (e.g., OpenAI, Google, Anthropic, etc.). Your interaction with these third-party AI platforms is subject to their respective privacy policies and terms of service. We strongly encourage you to review them. WebNexus AI acts as a client to these services, under your control.</li>
+            <li><strong>No Other Third-Party Sharing:</strong> We do not sell, trade, or otherwise transfer your personally identifiable information, API keys, prompts, or the content you process to any other third parties.</li>
+        </ul>
+
+        <h2>5. Data Storage and Security</h2>
+        <ul>
+            <li>All your WebNexus AI data, including API keys, custom prompts, model parameters, and Side Panel chat histories, is stored locally on your computer using Chrome's storage APIs (`chrome.storage.local` or `chrome.storage.sync`).</li>
+            <li>Data stored using `chrome.storage.local` (like API keys, custom prompts, detailed model settings, chat histories) is specific to the browser profile where the Extension is installed and is not automatically synced across devices by Chrome.</li>
+            <li>Data stored using `chrome.storage.sync` (used for global UI preferences like theme, text size, and global default platform for popup/sidepanel) may be synced by Google Chrome across your devices if you have enabled "Extensions" synchronization in your Chrome settings.</li>
+            <li>While we design the Extension to handle data locally, please be aware that no security measures are perfect. The security of locally stored data (like API keys) ultimately depends on the security of your computer and your Chrome browser profile. If your computer is compromised, locally stored data could potentially be accessed.</li>
+            <li>The Extension provides an export/import feature for settings (API keys, prompts, model parameters). This process is entirely local to your device; exported files are saved to your computer, and imported files are read from your computer.</li>
+        </ul>
+
+        <h2>6. User Rights and Choices</h2>
+        <ul>
+            <li>You can manage your API keys, custom prompts, and model parameter settings within the WebNexus AI "Settings" page.</li>
+            <li>You have the ability to add, edit, or delete your API keys and custom prompts at any time.</li>
+            <li>You can clear specific types of locally stored data or all locally stored settings via the "Data Management" tab in the Extension's settings.</li>
+            <li>Uninstalling the WebNexus AI extension will typically remove all data stored locally by the extension within that Chrome profile.</li>
+            <li>You can use the export feature to back up your settings and the import feature to restore them.</li>
+        </ul>
+
+        <h2>7. Children's Privacy</h2>
+        <p>WebNexus AI is not intended for use by children under the age of 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personally identifiable information from children. If you believe a child has provided us with personal information, please contact us, and we will take steps to delete such information.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last Updated" date of this Privacy Policy and may provide a notice within the Extension or on its Chrome Web Store listing. You are advised to review this Privacy Policy periodically for any changes. Changes to this PrivacyPolicy are effective when they are posted on this page.</p>
+
+        <h2>9. Contact Information</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at: <a href="mailto:webnexusaidev@gmail.com">webnexusaidev@gmail.com</a>.</p>
+    </div>
+</body>
+</html>
